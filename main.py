@@ -182,13 +182,13 @@ def main():
     def auto_opentab_delay():
         import threading, webbrowser, time
         print(f"如果浏览器没有自动打开，请复制并转到以下URL：")
-        print(f"\t（亮色主题）: http://localhost:{PORT}")
-        print(f"\t（暗色主题）: http://localhost:{PORT}/?__theme=dark")
+        print(f"\t（亮色主题）: http://34.82.4.223:{PORT}")
+        print(f"\t（暗色主题）: http://34.82.4.223:{PORT}/?__theme=dark")
         def open():
             time.sleep(2)       # 打开浏览器
             DARK_MODE, = get_conf('DARK_MODE')
-            if DARK_MODE: webbrowser.open_new_tab(f"http://localhost:{PORT}/?__theme=dark")
-            else: webbrowser.open_new_tab(f"http://localhost:{PORT}")
+            if DARK_MODE: webbrowser.open_new_tab(f"http://34.82.4.223:{PORT}/?__theme=dark")
+            else: webbrowser.open_new_tab(f"http://34.82.4.223:{PORT}")
         threading.Thread(target=open, name="open-browser", daemon=True).start()
         threading.Thread(target=auto_update, name="self-upgrade", daemon=True).start()
         threading.Thread(target=warm_up_modules, name="warm-up", daemon=True).start()

@@ -1,0 +1,17 @@
+gradio==3.28.3
+tiktoken>=0.3.3
+requests[socks]
+transformers
+python-markdown-math
+beautifulsoup4
+latex2mathml
+python-docx
+mdtex2html
+colorama
+Markdown
+pygments
+pymupdf
+openai
+numpy
+arxiv
+pymupdf
